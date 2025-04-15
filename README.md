@@ -54,6 +54,6 @@ npm start
 - 6 Abra o Insomnia e importe o arquivo **./docs/insomnia.yaml** para realizar os testes.
 
 ## Prints dos testes
-![Print01](./docs/Captura%201.png)
-![Print02](./docs/Captura%202.png)
-![Print03](./docs/Captura%203.png)
+![Print01](./docs/prints/Captura%201.png)
+![Print02](./docs/prints/Captura%202.png)
+![Print03](./docs/prints/Captura%203.png)
