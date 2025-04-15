@@ -3,7 +3,7 @@ const prisma = new PrismaClient();
 
 const create = async (req, res) => {
     const dados = req.body;
-    dados.valor = dados.valor * dados.valor;
+    dados.valor = dados.valor + dados.valor;
     try {
         const pedido = await prisma.pedido.create({
             data: dados,

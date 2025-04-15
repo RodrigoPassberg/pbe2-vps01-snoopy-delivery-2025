@@ -25,4 +25,35 @@ Desenvolver as funcionalidades conforme requisitos
 
 ## Tecnologias
 
+- Node.js (Framework)
+- VsCode (IDE)
+- Insomnia (IDE de testes)
+- Prisma (ORM)
+- XAMPP (IDE) SGBD MySQL
+
 ## Passo a Passo de como executar a API
+
+- 1 Clone este repositório
+- 2 Abrir com Vscode
+- 3 Criar o arquivo **.env** na pasta API contendo:
+```js
+DATABASE_URL="mysql://root@localhost:3306/snoopydelivery?schema=public&timezone=UTC"
+```
+- Obs: certifique-se de não ter um banco de dados chamado **pizzaria** no seu MySQL.
+- 4 Abrir o XAMPP e dar start em MySQL
+- 5 No VsCode abra um terminal **CTRL + '** cmd ou bash e digite os seguintes comandos para baixar as dependências e instalar o Banco de dados
+```bash
+cd api
+npm install
+npm i prisma -g
+npx prisma migrate dev --name init
+npx nodemon
+# ou
+npm start
+```
+- 6 Abra o Insomnia e importe o arquivo **./docs/insomnia.yaml** para realizar os testes.
+
+## Prints dos testes
+![Print01](./docs/Captura%201.png)
+![Print02](./docs/Captura%202.png)
+![Print03](./docs/Captura%203.png)
