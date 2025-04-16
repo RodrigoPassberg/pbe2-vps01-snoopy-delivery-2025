@@ -5,7 +5,7 @@ const Motorista = require('./controllers/motorista');
 const Pedido = require('./controllers/pedido');
 
 routes.get('/', (req, res) => {
-  return res.json({ titulo: 'SNOOPY PetShop Delivery' });
+  return res.json({ titulo: 'SNOOPY PetShop Delivery!!!' });
 });
 
 routes.post('/motoristas',Motorista.create);

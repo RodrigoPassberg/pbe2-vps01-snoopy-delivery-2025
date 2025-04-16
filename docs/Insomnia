@@ -1,0 +1,283 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1741693625185
+  modified: 1741693625185
+collection:
+  - name: Motorista
+    meta:
+      id: fld_074080a065474372998da73bc3074259
+      created: 1744802698814
+      modified: 1744802705789
+      sortKey: -1744802698814
+    children:
+      - url: http://localhost:3001/motoristas/3
+        name: Update
+        meta:
+          id: req_8a03856758a94aa7a144c01854afa22f
+          created: 1744802702175
+          modified: 1744803328237
+          isPrivate: false
+          sortKey: -1744802703538
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Passberg",
+            	"email": "rodrigpopassberg22@gmail.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas/1
+        name: Delete
+        meta:
+          id: req_e28b7e4823524ae9bed2e1349da5ab86
+          created: 1744802713421
+          modified: 1744803248504
+          isPrivate: false
+          sortKey: -1744802703638
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas
+        name: Read
+        meta:
+          id: req_1232e7e70bb34ab5a2d61e33674d0e22
+          created: 1744802714241
+          modified: 1744802821519
+          isPrivate: false
+          sortKey: -1744802703738
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas
+        name: Create
+        meta:
+          id: req_52009bb304c9442ea69c84108847c680
+          created: 1744802718107
+          modified: 1744803714443
+          isPrivate: false
+          sortKey: -1744802718107
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Denilson",
+            	"email": "Denilson@gmail.com",
+            	"telefones": "1939997584"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/motoristas/3
+        name: ReadOne
+        meta:
+          id: req_027ee5dea2384023b5bd29b1aeec59fd
+          created: 1744802742993
+          modified: 1744804007264
+          isPrivate: false
+          sortKey: -1744802742993
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Pedido
+    meta:
+      id: fld_128b7ba866f64ef8b2c1b6cbfff1e8a0
+      created: 1744803341380
+      modified: 1744803341380
+      sortKey: -1744802698764
+    children:
+      - url: http://localhost:3001/pedidos/3
+        name: Update
+        meta:
+          id: req_a6d3730c9f1d43d38b1c455a517fa730
+          created: 1744803341383
+          modified: 1744804270263
+          isPrivate: false
+          sortKey: -1744802703538
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            		"motoristaId": 3,
+            		"data": "2025-04-15T00:00:00.000Z",
+            		"produto": "Escova",
+            		"valor": "51",
+            		"endereco": "Rua SLA OCHI",
+            		"numero": "90",
+            		"cep": "13919410",
+            		"complemento": "Casa fundos "
+            	}
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos/1
+        name: Delete
+        meta:
+          id: req_28dbfd26e72e40858f53672be21ce89f
+          created: 1744803341384
+          modified: 1744804032918
+          isPrivate: false
+          sortKey: -1744802703638
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos
+        name: Read
+        meta:
+          id: req_b0dce7c7d71a4c8c92b304713e38ae62
+          created: 1744803341385
+          modified: 1744803893001
+          isPrivate: false
+          sortKey: -1744802703738
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos/3
+        name: ReadOne
+        meta:
+          id: req_8d21d2908bcc4d7990f6726122b27a2e
+          created: 1744803341386
+          modified: 1744804300107
+          isPrivate: false
+          sortKey: -1744802742993
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3001/pedidos
+        name: Create
+        meta:
+          id: req_deb39592422f48e4814a593e98812992
+          created: 1744803341386
+          modified: 1744804357807
+          isPrivate: false
+          sortKey: -1744802718107
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            		"motoristaId": 5,
+            		"data": "2025-04-15T00:00:00.000Z",
+            		"produto": "OSSO",
+            		"valor": "70",
+            		"endereco": "Rua SLA OCHI",
+            		"numero": "90",
+            		"cep": "13919410",
+            		"complemento": "Casa "
+            	}
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1744800899221
+    modified: 1744800899221
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1744800899163
+    modified: 1744800899163
+    isPrivate: false
